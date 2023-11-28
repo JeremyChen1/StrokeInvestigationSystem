@@ -9,16 +9,16 @@ public class main {
         f.setLayout(null);
         f.setSize(500, 300);
         f.setVisible(true);
-        Examination.BPmeasurement = new Examination.BPmeasurement((2023,09,15), 130,70,'ST' )
+        Examination.BPmeasurement = new Examination.BPmeasurement((2023,09,15), 130,70,'ST' );
         Image img1 = new getImage(
                 https://martinh.netfirms.com/BIOE60010/DaphneVonOram.jpg);
         Image img2 = new getImage(
                 https://martinh.netfirms.com/BIOE60010/SebastianCompton.jpg);
         ArrayList<Patient> pats = new ArrayList<Patient>();
         pats.add(new Patient(
-                "Dapne Von Oram", img1, 62, exam.MRImeasurement, exam.BPmeasurement));
+                "Dapne Von Oram", img1, 62, Examination.MRImeasurement, Examination.BPmeasurement));
         pats.add(new Patient(
-                "Sebastian Compton", img2, 31, exam.MRImeasurement, exam.BPmeasurement));
+                "Sebastian Compton", img2, 31, Examination.MRImeasurement, Examination.BPmeasurement));
     }
 }
 }

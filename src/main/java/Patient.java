@@ -11,12 +11,14 @@ public class Patient {
     private Image image;
     private int age;
     private Examination exam;
-    public Patient(String name, Image image, int age, Examination exam){
+
+    public Patient(String name, Image image, int age, Examination exam) {
         this.name = name;
         this.image = image;
         this.age = age;
-        this.exam =exam;
+        this.exam = exam;
     }
+}
 
 
 
