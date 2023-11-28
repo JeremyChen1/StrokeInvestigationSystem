@@ -1,10 +1,10 @@
-package MRI;
+package Examination;
 
-import jdk.vm.ci.meta.Local;
+import Examination.MRImeasurement;
 
 import java.time.LocalDate;
 
-public class Scandate extends MRImeasurement{
+public class Scandate extends MRImeasurement {
     public LocalDate ld;
     public Scandate(LocalDate date,ld){
         super();

@@ -1,5 +1,3 @@
-package MRI;
-
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -10,16 +8,16 @@ public class Image{
     public Image(URL url){
         this.url = url;
     }
-    public java.awt.Image getURL(){
+    public void Image(URL url){
         JLabel label = new JLabel();
-        URL imageURL=null;
+        URL url= null;
         try {
-            imageURL = new URL("https://martinh.netfirms.com/b3ta/kennyg.jpg");
+            url = new URL("https://martinh.netfirms.com/b3ta/kennyg.jpg");
         }
         catch (MalformedURLException e){
             System.out.println(e.getMessage());
         }
-        ImageIcon thisImageIcon = new ImageIcon(imageURL);
+        ImageIcon thisImageIcon = new ImageIcon(url);
         label.setIcon(thisImageIcon);
     }
 }
