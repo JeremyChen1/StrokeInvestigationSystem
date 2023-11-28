@@ -1,28 +1,23 @@
 package Examination;
 
-import javax.swing.*;
 import java.net.URL;
 import java.time.LocalDate;
-public class MRImeasurement extends Examination{
+
+public class MRImeasurement extends Examination {
     protected URL MRIurl;
     protected int MFstrength;
-    public MRImeasurement(LocalDate date, URL MRIurl, int MFstrength){
-        super(date);
-        this. MRIurl = MRIurl;
-        this. MFstrength = MFstrength;
+
+    public MRImeasurement(String testname, LocalDate date, URL MRIurl, int MFstrength) {
+        super(date,testname);
+        this.date = date;
+        this.MRIurl = MRIurl;
+        this.MFstrength = MFstrength;
     }
-    public void image(URL MRIurl){
-        JLabel label = new JLabel();
-        URL MRIurl=null;
-        try {
-            MRIurl = new URL("https://martinh.netfirms.com/b3ta/kennyg.jpg");
-        }
-        catch (MalformedURLException e){
-            System.out.println(e.getMessage());
-        }
-        ImageIcon thisImageIcon = new ImageIcon(imageURL);
-        label.setIcon(thisImageIcon);
+    public void MRIdisplayText(){
+        System.out.println("The "+testname+" date is on"+getDate(date)+"with Magnetic field strength:" + MFstrength);
     }
-    public abstract String getDisplayText();
+    public void MRIimg(URL MRIurl){
+        Image MRI = new Image(URL MRIurl);
+    }
 
 }
